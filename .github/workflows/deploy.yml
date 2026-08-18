@@ -47,7 +47,7 @@ jobs:
             docker run -d \
               --name maqalalar-app \
               --restart always \
-              -p 127.0.0.1:8085:80 \
+              -p 127.0.0.1:8086:80 \
               ${{ secrets.DOCKERHUB_USERNAME }}/maqalalar-react:latest
             
             docker image prune -f
